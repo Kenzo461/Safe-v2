@@ -10,7 +10,7 @@ function sleep(ms) {
 
 const GoStumble = (auth) => new Promise((resolve, reject) => {
 
-  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3', {
+  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/2', {
     method: 'GET',
     headers: {
       'authorization': auth
@@ -87,7 +87,7 @@ By : ${('LANA')}
 >  ${(`Piala By Lana : ${trophy}`)}  
 >  ${(`Mahkota By Lana : ${crown}`)}
 >  ${(`Status : Success !`)}`));
-      await sleep(6500);
+      await sleep(3000);
 
     } else if (result == 'BANNED') {
       console.log(chalk.bgRed(`Mampus Banned Makanya jangan brutal`));
